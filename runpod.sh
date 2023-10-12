@@ -13,10 +13,10 @@ apt -y install python3-pip
 git clone https://github.com/shanhaicoder/XENGPUMiner.git
 cd XENGPUMiner
 chmod +x build.sh
-./build.sh
+./build.sh -cuda_arch sm_86
 
 # Update the configuration file
-sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xca5F023af4F822353A563Ae6a3591bA2024495E8/g' config.conf
+sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xa3912c9569e30274b1f06186476247453dca463d/g' config.conf
 
 # Install Python requirements
 pip install -U -r requirements.txt
