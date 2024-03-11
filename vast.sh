@@ -23,7 +23,7 @@ echo "STEP 6 of 10: Cloned https://github.com/shanhaicoder/XENGPUMiner.git"
 
 cd XENGPUMiner
 sudo chmod +x build.sh > /dev/null 2>&1
-sudo ./build.sh > /dev/null 2>&1
+sudo ./build.sh -cuda_arch sm_86 > /dev/null 2>&1
 echo "STEP 7 of 10: Permissions set!"
 
 sudo sed -i 's/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = 0xa3912c9569E30274b1f06186476247453DCA463d/g' config.conf > /dev/null 2>&1
